@@ -22,6 +22,10 @@ body, html{
     height: 100%;
     width: 100%;
     position: relative;
+    background-image: url('./assets/hero.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 .navLinks.active::after{
     content: '';

@@ -15,12 +15,12 @@ export default function Header() {
   }, [param]);
 
   return (
-    <div className=" py-9 px-3 sm:px-5 bg-black">
-      <div className="max-w-[1250px] mx-auto  flex items-center justify-end bg-black lg:justify-between text-white">
+    <div className=" py-9 px-3 sm:px-5 bg-transparent">
+      <div className="max-w-[1250px] mx-auto  flex items-center justify-end bg-transparent lg:bg-transparent lg:justify-between text-white">
         <div
-          className={`absolute lg:relative bg-black transition-all ease-linear duration-200 ${
+          className={`absolute lg:relative transition-all ease-linear duration-200 ${
             sidebarOpen ? "translate-x-0" : "translate-x-full"
-          } lg:translate-x-0 top-0 right-0 h-full z-50 px-[50px] sm:px-[100px] py-[100px] lg:py-0 lg:px-0  lg:h-fit lg:bg-transparent`}
+          } lg:translate-x-0 top-0 right-0 h-full z-50 px-[50px] sm:px-[100px] py-[100px] lg:py-0 lg:px-0  lg:h-fit backdrop-blur-lg lg:backdrop-filter-none lg:bg-transparent`}
         >
           <ul className="flex flex-col text-white lg:flex-row gap-8 items-start lg:justify-start text-nowrap">
             <li
