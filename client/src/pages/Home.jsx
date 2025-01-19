@@ -1,4 +1,6 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
+import ProductCard from "../components/ProductCard";
 export default function Home() {
   return (
     <div className="relative">
@@ -28,8 +30,16 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="bg-white">
-        something 
+      <div className="bg-white w-full">
+        <div className="max-w-[1400px] mx-auto px-3 pt-[80px] pb-[100px]">
+          <h1 className=" text-center italic font-serif text-4xl font-semibold my-12">Most Popular</h1>
+          <div className="flex flex-wrap justify-center gap-8 relative ">
+            <ProductCard/>
+            <ProductCard/>
+            <ProductCard/>
+            <ProductCard/>
+          </div>
+        </div>
       </div>
     </div>
   );

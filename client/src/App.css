@@ -40,3 +40,9 @@ body, html{
     border-radius: 4px;
     background-color: white;
 }
+.shop-icon{
+    transition: all 0.3s ease-in-out;
+}
+.shop-items:hover .shop-icon{
+    display: block;
+}
