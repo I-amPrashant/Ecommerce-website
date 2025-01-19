@@ -46,3 +46,9 @@ body, html{
 .shop-items:hover .shop-icon{
     display: block;
 }
+#testimonial{
+    background-image: url('https://i0.wp.com/picjumbo.com/wp-content/uploads/beautiful-autumn-nature-with-trees-of-yellow-leaves-free-image.jpeg?w=600&quality=80');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
