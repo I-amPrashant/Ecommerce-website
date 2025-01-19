@@ -1,18 +1,19 @@
 import React, { useState, useEffect, useRef } from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 export default function Header() {
   const [tab, setTab] = useState("");
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
-  const { param } = useParams();
+  const location=useLocation();
   const searchRef = useRef();
 
   useEffect(() => {
+    const param = location.pathname;
     if (param === "/" || param === undefined) {
       return setTab("home");
     }
-    setTab(param);
-  }, [param]);
+    setTab(param.split("/")[1]);
+  }, [location]);
 
   return (
     <div className=" py-9 px-3 sm:px-5 bg-transparent">
@@ -23,38 +24,42 @@ export default function Header() {
           } lg:translate-x-0 top-0 right-0 h-full z-50 px-[50px] sm:px-[100px] py-[100px] lg:py-0 lg:px-0  lg:h-fit backdrop-blur-lg lg:backdrop-filter-none lg:bg-transparent`}
         >
           <ul className="flex flex-col text-white lg:flex-row gap-8 items-start lg:justify-start text-nowrap">
-            <li
+          
+              <Link to="/"><li
               className={`relative navLinks ${
                 tab === "home" && "active text-gray-300"
               } py-2 cursor-pointer text-base hover:text-gray-300 duration-150 transition-all ease-linear`}
               onClick={() => setTab("home")}
             >
-              <Link to="/">Home</Link>
-            </li>
-            <li
+              Home
+            </li></Link>
+         
+              <Link to="/shop">  <li
               className={`relative navLinks ${
                 tab === "shop" && "active text-gray-300"
               } py-2 cursor-pointer text-base hover:text-gray-300 duration-150 transition-all ease-linear`}
               onClick={() => setTab("shop")}
             >
-              <Link to="/shop">Shop</Link>
-            </li>
-            <li
+             Shop
+            </li></Link>
+
+              <Link to="/about"><li
               className={`relative navLinks ${
                 tab === "about" && "active text-gray-300"
               } py-2 cursor-pointer text-base hover:text-gray-300 duration-150 transition-all ease-linear`}
               onClick={() => setTab("about")}
             >
-              <Link to="/about">About</Link>
-            </li>
-            <li
+              About
+            </li></Link>
+
+              <Link to="/contact-us">   <li
               className={`relative navLinks ${
                 tab === "contact-us" && "active text-gray-300"
               } py-2 cursor-pointer text-base hover:text-gray-300 duration-150 transition-all ease-linear`}
               onClick={() => setTab("contact-us")}
             >
-              <Link to="/contact-us">Contact Us</Link>
-            </li>
+              Contact Us
+            </li></Link>
 
             <div className="flex lg:hidden items-center gap-5">
               <div

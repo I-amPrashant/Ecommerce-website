@@ -9,11 +9,12 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 body, html{
-    overflow-x: hidden;
     height: 100vh;
     width: 100vw;
+    overflow-x: hidden;
 }
 ::-webkit-scrollbar{
     display: none;
@@ -21,6 +22,8 @@ body, html{
 #root{
     height: 100%;
     width: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
     position: relative;
     background-image: url('./assets/hero.gif');
     background-repeat: no-repeat;
