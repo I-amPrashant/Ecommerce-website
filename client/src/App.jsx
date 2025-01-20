@@ -5,6 +5,7 @@ import Shop from "./pages/Shop";
 import About from "./pages/About";
 import ContactUs from "./pages/ContactUs";
 import ScrollTop from "./components/ScrollTop";
+import Footer from "./components/Footer";
 import "./App.css";
 
 export default function App() {
@@ -18,6 +19,7 @@ export default function App() {
           <Route path="/about" element={<About />}></Route>
           <Route path="/contact-us" element={<ContactUs />}></Route>
         </Routes>
+        <Footer/>
         <ScrollTop/>
       </Router>
     </>
