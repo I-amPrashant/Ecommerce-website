@@ -47,9 +47,9 @@ body, html{
     display: block;
 }
 #testimonial{
-    background-image: url('https://img.freepik.com/free-photo/front-view-back-school-concept-with-copy-space_23-2148559696.jpg?ga=GA1.1.519495728.1737608653&semt=ais_hybrid');
+    background-image: url('https://t4.ftcdn.net/jpg/08/91/60/37/240_F_891603790_LTbTKOwHJB8TzfxibKkTMSlLRLUu86z0.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment:scroll;
-    background-position: bottom;
+    background-position: center;
 }
