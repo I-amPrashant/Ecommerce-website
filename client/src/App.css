@@ -47,9 +47,16 @@ body, html{
     display: block;
 }
 #testimonial{
-    background-image: url('https://t4.ftcdn.net/jpg/08/91/60/37/240_F_891603790_LTbTKOwHJB8TzfxibKkTMSlLRLUu86z0.jpg');
+    background-image: url('https://t3.ftcdn.net/jpg/10/82/53/50/240_F_1082535075_jSNDcpDWYOBfA8DD4o9nVF27T8zH7feY.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment:scroll;
+    background-attachment:fixed;
+    background-position: center;
+}
+#explore{
+    background-image: url('https://t4.ftcdn.net/jpg/09/50/30/11/240_F_950301154_c9tEQg6RCsiFk2ojIkURUMgNxWIfrCLj.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
     background-position: center;
 }

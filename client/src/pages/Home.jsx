@@ -31,69 +31,132 @@ export default function Home() {
       </div>
 
       <div className="bg-white w-full">
-
         {/* most popular  */}
         <div className="max-w-[1400px] mx-auto px-3 pt-[80px] pb-[100px]">
-          <h1 className=" text-center italic font-serif text-4xl font-semibold my-12">Most Popular</h1>
+          <h1 className=" text-center italic font-serif text-4xl font-semibold my-12">
+            Most Popular
+          </h1>
           <div className="flex flex-wrap justify-center gap-8 relative ">
-            <ProductCard/>
-            <ProductCard/>
-            <ProductCard/>
-            <ProductCard/>
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
           </div>
         </div>
 
         {/* newest product */}
         <div className="max-w-[1400px] mx-auto px-3 pb-[100px]">
-          <h1 className=" text-center italic font-serif text-4xl font-semibold my-12">Newest Product</h1>
+          <h1 className=" text-center italic font-serif text-4xl font-semibold my-12">
+            Newest Product
+          </h1>
           <div className="flex flex-wrap justify-center gap-8 relative">
-            <ProductCard/>
-            <ProductCard/>
-            <ProductCard/>
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
           </div>
         </div>
 
-
-      {/* testimonial  */}
-      <div className="w-full  px-3 py-[100px]  flex  justify-center items-center" id='testimonial'>
-        <div className="max-w-[800px] text-center items-center flex flex-col text-[#fff]">
+        {/* testimonial  */}
+        <div
+          className="w-full  px-3 py-[100px]  flex  justify-center items-center"
+          id="testimonial"
+        >
+          <div className="max-w-[800px] text-center items-center flex flex-col text-[#fff]">
             <div className="flex gap-4">
-              <span className="text-xl text-yellow-400"><i className="fa fa-star"></i></span>
-              <span className="text-xl text-yellow-400"><i className="fa fa-star"></i></span>
-              <span className="text-xl text-yellow-400"><i className="fa fa-star"></i></span>
-              <span className="text-xl text-yellow-400"><i className="fa fa-star"></i></span>
-              <span className="text-xl text-yellow-400"><i className="fa fa-star"></i></span>
+              <span className="text-xl text-yellow-400">
+                <i className="fa fa-star"></i>
+              </span>
+              <span className="text-xl text-yellow-400">
+                <i className="fa fa-star"></i>
+              </span>
+              <span className="text-xl text-yellow-400">
+                <i className="fa fa-star"></i>
+              </span>
+              <span className="text-xl text-yellow-400">
+                <i className="fa fa-star"></i>
+              </span>
+              <span className="text-xl text-yellow-400">
+                <i className="fa fa-star"></i>
+              </span>
             </div>
-            <h1 className="text-3xl font-semibold mt-5 font-serif italic tracking-wider">"PB is my fashion sanctuary! The curated collection effortlessly blends chic trends with timeless elegance, making every purchase a delightful discovery. The quality of their pieces is unmatched, and I appreciate the brand's commitment to sustainable fashion. What truly sets PB apart is their customer-centric approach."</h1>
-            <h2 className=" mt-5 tracking-wider font-thin">Mr. Prashant Bartaula</h2>
+            <h1 className="text-3xl font-semibold mt-5 font-serif italic tracking-wider">
+              "PB is my fashion sanctuary! The curated collection effortlessly
+              blends chic trends with timeless elegance, making every purchase a
+              delightful discovery. The quality of their pieces is unmatched,
+              and I appreciate the brand's commitment to sustainable fashion.
+              What truly sets PB apart is their customer-centric approach."
+            </h1>
+            <h2 className=" mt-5 tracking-wider font-thin">
+              Mr. Prashant Bartaula
+            </h2>
+          </div>
         </div>
-      </div>
 
-      {/* our services  */}
-      <div className="bg-white w-full py-[100px] px-4 ">
-        <div className="max-w-[1400px] mx-auto flex flex-wrap justify-center gap-14 items-center">
-          <div className="flex flex-col items-center gap-4 max-w-[300px] text-center">
-              <div className="text-3xl text-gray-800"><i className="fa fa-truck"></i></div>
+        {/* our services  */}
+        <div className="bg-white w-full py-[100px] px-4 ">
+          <div className="max-w-[1400px] mx-auto flex flex-wrap justify-center gap-14 items-center">
+            <div className="flex flex-col items-center gap-4 max-w-[300px] text-center">
+              <div className="text-3xl text-gray-800">
+                <i className="fa fa-truck"></i>
+              </div>
               <h1 className="text-2xl font-medium italic">Free Shipping</h1>
-              <p className="text-sm text-gray-500">Shopping with no extra charges – savor the liberty of complimentary shipping on every order.</p>
-          </div>
-          <div className="flex flex-col items-center gap-4 max-w-[300px] text-center">
-              <div className="text-3xl text-gray-800"><i className="fa fa-lock"></i></div>
+              <p className="text-sm text-gray-500">
+                Shopping with no extra charges – savor the liberty of
+                complimentary shipping on every order.
+              </p>
+            </div>
+            <div className="flex flex-col items-center gap-4 max-w-[300px] text-center">
+              <div className="text-3xl text-gray-800">
+                <i className="fa fa-lock"></i>
+              </div>
               <h1 className="text-2xl font-medium italic">Secure Payments</h1>
-              <p className="text-sm text-gray-500">Shop with confidence knowing that your transactions are safeguarded.</p>
-          </div>
-          <div className="flex flex-col items-center gap-4 max-w-[300px] text-center">
-              <div className="text-3xl text-gray-800"><i className="fa fa-undo"></i></div>
+              <p className="text-sm text-gray-500">
+                Shop with confidence knowing that your transactions are
+                safeguarded.
+              </p>
+            </div>
+            <div className="flex flex-col items-center gap-4 max-w-[300px] text-center">
+              <div className="text-3xl text-gray-800">
+                <i className="fa fa-undo"></i>
+              </div>
               <h1 className="text-2xl font-medium italic">Easy Return </h1>
-              <p className="text-sm text-gray-500">With our hassle-free Easy Returns, changing your mind has never been more convenient.</p>
-          </div>
-          <div className="flex flex-col items-center gap-4 max-w-[300px] text-center">
-              <div className="text-3xl text-gray-800"><i className="fa fa-globe"></i></div>
+              <p className="text-sm text-gray-500">
+                With our hassle-free Easy Returns, changing your mind has never
+                been more convenient.
+              </p>
+            </div>
+            <div className="flex flex-col items-center gap-4 max-w-[300px] text-center">
+              <div className="text-3xl text-gray-800">
+                <i className="fa fa-globe"></i>
+              </div>
               <h1 className="text-2xl font-medium italic">Order Tracking</h1>
-              <p className="text-sm text-gray-500">Stay in the loop with our Order Tracking feature – from checkout to your doorstep.</p>
+              <p className="text-sm text-gray-500">
+                Stay in the loop with our Order Tracking feature – from checkout
+                to your doorstep.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
+
+        {/* explore  */}
+        <div className="bg-white w-full py-[100px] px-4 " id="explore">
+          <div className="max-w-[1100px] mx-auto flex justify-center sm:justify-end">
+            <div className="flex flex-col gap-5 text-white max-w-[600px]">
+              <h2 className="font-medium text-xl tracking-wider">EXPLORE</h2>
+              <h1 className="text-3xl sm:text-5xl italic">
+                Elevate your wardrobe, embrace timeless style!
+              </h1>
+              <p>
+                Explore our collections today and experience the joy of fashion.
+                Shop now for the epitome of chic sophistication!
+              </p>
+              <Link to='/shop'>
+              <button className="bg-transparent hover:bg-white border border-white py-3 px-5 w-min text-nowrap mt-2
+               hover:text-gray-900 duration-200 transition-all ease-linear">Shop Now</button>
+              </Link>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

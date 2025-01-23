@@ -34,8 +34,8 @@ export default function Footer() {
           </div>
         </div>
       </div>
-        <div className='text-gray-500 text-xl text-center pt-[50px] border-t'>
-            <h1>&copy; 2025 All rights reserved</h1>
+        <div className='text-gray-400 text-xl text-center pt-[50px] border-t border-gray-300'>
+            <h1>&copy; 2025 All rights reserved | Designed by <span className='font-semibold'>PB</span></h1>
         </div>
     </div>
   )
