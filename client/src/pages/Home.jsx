@@ -70,7 +70,7 @@ export default function Home() {
       </div>
 
       {/* our services  */}
-      <div className="bg-white w-full py-[100px] px-4 mb-[100px]">
+      <div className="bg-white w-full py-[100px] px-4 ">
         <div className="max-w-[1400px] mx-auto flex flex-wrap justify-center gap-14 items-center">
           <div className="flex flex-col items-center gap-4 max-w-[300px] text-center">
               <div className="text-3xl text-gray-800"><i className="fa fa-truck"></i></div>
