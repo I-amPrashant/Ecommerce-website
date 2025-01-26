@@ -1,11 +1,15 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
+import {auth, app} from '../firebase'
+import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
+
 export default function Header() {
   const [tab, setTab] = useState("");
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
   const location=useLocation();
   const searchRef = useRef();
+  const provider=new GoogleAuthProvider();
 
   useEffect(() => {
     const param = location.pathname;
@@ -14,6 +18,11 @@ export default function Header() {
     }
     setTab(param.split("/")[1]);
   }, [location]);
+
+
+  const handleSignIn=()=>{
+
+  }
 
   return (
     <div className=" py-9 px-3 sm:px-5 bg-transparent">
@@ -132,8 +141,14 @@ export default function Header() {
               3
             </sup>
           </button>
+          <div className="pl-5 hidden lg:block">
+         <button onClick={()=>handleSignIn()} className="px-3 py-1 border hover:text-[#000] hover:bg-[#fff] transition-all duration-200 ease-linear">Sign In</button>
+        </div>
         </div>
 
+        <div className="pl-5 lg:hidden">
+         <button onClick={()=>handleSignIn()} className="px-3 py-1 border hover:text-[#000] hover:bg-[#fff] transition-all duration-200 ease-linear">Sign In</button>
+        </div>
         {/* hamburger  */}
         <div className="lg:hidden ml-8">
           <button className="text-xl" onClick={() => setSidebarOpen(true)}>
